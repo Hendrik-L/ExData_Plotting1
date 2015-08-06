@@ -21,7 +21,7 @@ energyUsageData <- cbind(energyUsageData$DateTime, energyUsageData[,3:8])
 names(energyUsageData)[1] <- "Date_Time"
 
 # prepare the 2 by 2 matrix
-Cairo(file = "plot4.png", type = "png", width = 480, height = 480)
+Cairo(file = "plot4.png", type = "png", width = 480, height = 480, bg = "white")
 par(mfrow = c(2, 2))
 
 # prepare the upper left chart

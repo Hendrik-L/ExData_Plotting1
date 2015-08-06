@@ -29,7 +29,7 @@ yDataLabel <- "Global Active Power (kilowatts)"
 # png(filename = "plot2.png", width = 480, height = 480, bg = "transparent", type = "windows")
 
 # this uses the Cairo system in order to gain visually appealing anti-aliasing also on Windows:
-Cairo(file = "plot2.png", type = "png", width = 480, height = 480)
+Cairo(file = "plot2.png", type = "png", width = 480, height = 480, bg = "white")
 
 # plot and save the graph
 plot(xData, yData, type = "l", xlab = "", ylab = yDataLabel)

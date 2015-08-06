@@ -29,7 +29,7 @@ plotData <- energyUsageData$Global_active_power
 # png(filename = "plot1.png", width = 480, height = 480, bg = "transparent", type = "windows")
 
 # this uses the Cairo system in order to gain visually appealing anti-aliasing also on Windows:
-Cairo(file = "plot1.png", type = "png", width = 480, height = 480)
+Cairo(file = "plot1.png", type = "png", width = 480, height = 480, bg = "white")
 
 # plot and save the histogram
 hist(plotData, col = "red", xlab = dataLabelExtended, main = dataLabel)

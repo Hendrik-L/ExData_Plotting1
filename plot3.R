@@ -31,7 +31,7 @@ yDataLabel <- "Energy sub metering"
 # png(filename = "plot3.png", width = 480, height = 480, bg = "transparent", type = "windows")
 
 # this uses the Cairo system in order to gain visually appealing anti-aliasing also on Windows:
-Cairo(file = "plot3.png", type = "png", width = 480, height = 480)
+Cairo(file = "plot3.png", type = "png", width = 480, height = 480, bg = "white")
 
 # plot and save the graph
 plot(xData, yData1, type = "n", xlab = "", ylab = yDataLabel)
